@@ -22,8 +22,8 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
                     <li class="nav-item">
                         <a class="nav-link">Welcome {{name}}</a>
                     </li>
@@ -53,16 +53,21 @@
     <br>
     <br>
     <div class="container" style="display:flex; flex-flow:column; justify-content:center; align-items:center;">
-    <div class="card" style="width: 18rem;">
+
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+    <div class="card justify-content-center" >
         <div class="card-body">
-          <h5 class="card-title">Make resume</h5>
+          <h4 class="card-title">Make resume</h4>
           <a href="/Make_resume" class="btn btn-primary">Make resume</a>
         </div>
       </div>
+      </div>
       <br>
-      <div class="card" style="width: 18rem;">
+      <div class="col">
+      <div class="card" >
         <div class="card-body">
-          <h5 class="card-title">Upload resume</h5>
+          <h4 class="card-title">Upload resume</h4>
           <form action="/Resume">
             <input type="file" id="myFile" name="filename">
             <input type="submit">
@@ -70,50 +75,67 @@
           
         </div>
       </div>
+      </div>
+
       <br>
-      <div class="card" style="width: 18rem;">
+      <div class="col">
+      <div class="card justify-content-center" >
         <div class="card-body">
-          <h5 class="card-title">View Notifications</h5>
+          <h4 class="card-title">View Notifications</h4>
           <a href="/Notification_Student" class="btn btn-primary">View Notifications</a>
         </div>
       </div>
+      </div>
       <br>
-      <div class="card" style="width: 18rem;">
+      <div class="col">
+      <div class="card justify-content-center" >
         <div class="card-body">
-          <h5 class="card-title">View Resume</h5>
+          <h4 class="card-title">View Resume</h4>
           <a href="/view_resume" class="btn btn-primary">View Resume</a>
         </div>
       </div>
+      </div>
       <br>
-      <div class="card" style="width: 18rem;">
+      <div class="col">
+      <div class="card justify-content-center" >
         <div class="card-body">
-          <h5 class="card-title">View Personal Notifications</h5>
+          <h4 class="card-title">View Personal Notifications</h4>
           <a href="/student_personal_notification" class="btn btn-primary">View Personal Notifications</a>
         </div>
       </div>
+      </div>
       <br>
-      <div class="card" style="width: 18rem;">
+      <div class="col">
+      <div class="card justify-content-center" >
         <div class="card-body">
-          <h5 class="card-title">Get Feedback</h5>
+          <h4 class="card-title">Get Feedback</h4>
           <a href="/Feedback_Request" class="btn btn-primary">Request for Feedback from Alumni</a>
         </div>
       </div>
+      </div>
       <br>
-      <div class="card" style="width: 18rem;">
+     
+      <div class="col">
+      <div class="card justify-content-center" >
         <div class="card-body">
-          <h5 class="card-title">View Given Feedbacks</h5>
+          <h4 class="card-title">View Given Feedbacks</h4>
           <a href="/Given_Feedback" class="btn btn-primary">View Personal Notifications</a>
         </div>
       </div>
+      </div>
       <br>
-      <div class="card" style="width: 18rem;">
+      
+      <div class="col">
+      <div class="card justify-content-center" >
         <div class="card-body">
-          <h5 class="card-title">Apply for companies</h5>
+          <h4 class="card-title">Apply for companies</h4>
           <a href="/Apply_for_companies" class="btn btn-primary">View Personal Notifications</a>
         </div>
       </div>
-    </div>
+      </div>
 
+    </div>
+</div>
 </body>
 
 </html>
